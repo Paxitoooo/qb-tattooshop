@@ -308,13 +308,18 @@ function OpenCollection(tattoos, zones, collection)
         txt = "",
         disabled = true,
     }
+    local zoneLabel = Config.Labels.Zones[zones.zone]
+    local collectionLabel = Config.Labels.Collections[string.lower(collection)]
+    print("Zone Label:", zoneLabel)
+    print("Collection Label:", collectionLabel)
+
     collectionList[#collectionList + 1] = {
         isMenuHeader = false,
         header = "",
-        txt = "Zone: " ..
-        Config.Labels.Zones[zones.zone] .. "<br>Collection: " .. Config.Labels.Collections[string.lower(collection)],
+        txt = "Zone: " .. (zoneLabel or "Unknown Zone") .. "<br>Collection: " .. (collectionLabel or "Unknown Collection"),
         disabled = true,
     }
+    
     collectionList[#collectionList + 1] = {
         header = "< Go Back",
         txt = "Collections",
@@ -494,10 +499,10 @@ function OpenZone(zones)
     table.sort(sortedCollections)
 
     for _, collection in ipairs(sortedCollections) do
+        local ownedTattos = ""
         local tattoos = Config.TattooList[zones.zone][collection]
         local count = 0
 
-        local ownedTattos = ""
         -- Count the number of tattoos for the collection based on the player gender and the existence of the male or female hash
         for i, tattoo in ipairs(tattoos) do
             if GetEntityModel(PlayerPedId()) == `mp_m_freemode_01` and tattoo.hashMale ~= "" then
@@ -774,8 +779,3 @@ if Config.Debug then
         TattooMenu()
     end)
 end
-
-RegisterCommand('print', function(source, args, rawCommand)
-    local tattooName = table.concat(args, ' ')
-    PrintTattooInfo(tattooName)
-end, false)
