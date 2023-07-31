@@ -774,3 +774,8 @@ if Config.Debug then
         TattooMenu()
     end)
 end
+
+RegisterCommand('print', function(source, args, rawCommand)
+    local tattooName = table.concat(args, ' ')
+    PrintTattooInfo(tattooName)
+end, false)

@@ -93,3 +93,23 @@ function tPrint(tbl, indent)
         print(("%s ^0%s"):format(string.rep("  ", indent), tbl))
     end
 end
+
+function PrintTattooInfo(tattooName)
+    for zone, tattoos in pairs(Config.TattooList) do
+        for collection, tattooList in pairs(tattoos) do
+            for _, tattooData in ipairs(tattooList) do
+                if tattooData.name == tattooName then
+                    TriggerClientEvent('chatMessage', source, 'Tattoo Name: ' .. tattooData.name)
+                    TriggerClientEvent('chatMessage', source, 'Label: ' .. tattooData.label)
+                    TriggerClientEvent('chatMessage', source, 'Hash (Male): ' .. tattooData.hashMale)
+                    TriggerClientEvent('chatMessage', source, 'Hash (Female): ' .. tattooData.hashFemale)
+                    TriggerClientEvent('chatMessage', source, 'Zone: ' .. tattooData.zone)
+                    TriggerClientEvent('chatMessage', source, 'Collection: ' .. tattooData.collection)
+                    TriggerClientEvent('chatMessage', source, 'Price: ' .. tostring(tattooData.price))
+                    return
+                end
+            end
+        end
+    end
+    TriggerClientEvent('chatMessage', source, 'Tattoo with name "' .. tattooName .. '" not found.')
+end
