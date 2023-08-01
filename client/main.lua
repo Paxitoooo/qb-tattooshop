@@ -244,10 +244,16 @@ local function ShowCurrentTattoos()
             for collectionName, collectionData in pairs(zoneData) do
                 for _, t in ipairs(collectionData) do
                     if t.hashMale == tattoo.nameHash or t.hashFemale == tattoo.nameHash then
+                        tattooName = t.name
                         local tattooPrice = t.price or 10000
-                        tattooName = GetLabelText(t.name)
                         tattooValue = math.ceil(tattooPrice / Config.Discount)
                         tattooZone = t.zone
+                        if t.collection then
+                            local collectionLabel = Config.Labels.Collections[string.lower(t.collection)]
+                            if collectionLabel then
+                                tattooName = collectionLabel .. " - " .. tattooName
+                            end
+                        end
                         break
                     end
                 end
@@ -260,10 +266,10 @@ local function ShowCurrentTattoos()
             end
         end
         list[#list + 1] = {
-            header = tattooName,
+            header = "Tattoo " .. i .. ": " .. tattooName,
             txt = "Zone: " ..
             Config.Labels.Zones[tattooZone] ..
-            ", Value: " .. tattooValue .. ", Collection: " .. Config.Labels.Collections[string.lower(tattoo.collection)],
+            ", Value: $" .. tattooValue,
             params = {
                 isAction = true,
                 event = function()
