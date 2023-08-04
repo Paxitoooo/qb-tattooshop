@@ -68,8 +68,9 @@ local function BuyTattoo(collection, name, label, price)
         if success then
             currentTattoos[#currentTattoos + 1] = { collection = collection, nameHash = name, Count = opacity }
         end
-    end, currentTattoos, price, { collection = collection, nameHash = name, Count = opacity }, GetLabelText(label))
+    end, currentTattoos, price, { collection = collection, nameHash = name, Count = opacity }, label) -- Pass label instead of GetLabelText(label)
 end
+
 
 local function RemoveTattoo(name, label)
     for k, v in pairs(currentTattoos) do
@@ -104,7 +105,6 @@ local function GetNaked()
     local playerData = QBCore.Functions.GetPlayerData()
     QBCore.Functions.TriggerCallback('qb-multicharacter:server:getSkin', function(model, data)
         defaultOutfit = json.decode(data)
-        --debugPrint(defaultOutfit)
         if model == "1885233650" then
             TriggerEvent('qb-clothing:client:loadOutfit', nakedPed.male)
         elseif model == '-1667301416' then
@@ -170,7 +170,6 @@ local function ChangeCameraPosition(zones, currentCamPos, currentHeading, curren
     local ped = PlayerPedId()
     local heading = 0
 
-    -- Exprimental might not work as it suppose to.
     if IsDisabledControlPressed(0, 36) then
         if IsDisabledControlPressed(0, 19) then
             heading = currentHeading - 90
@@ -240,20 +239,16 @@ local function ShowCurrentTattoos()
         local tattooName = ""
         local tattooValue = 0
         local tattooZone = ""
+        local tattooLabel = "" 
         for zoneName, zoneData in pairs(Config.TattooList) do
             for collectionName, collectionData in pairs(zoneData) do
                 for _, t in ipairs(collectionData) do
                     if t.hashMale == tattoo.nameHash or t.hashFemale == tattoo.nameHash then
-                        tattooName = t.name
                         local tattooPrice = t.price or 10000
+                        tattooName = GetLabelText(t.name)
                         tattooValue = math.ceil(tattooPrice / Config.Discount)
                         tattooZone = t.zone
-                        if t.collection then
-                            local collectionLabel = Config.Labels.Collections[string.lower(t.collection)]
-                            if collectionLabel then
-                                tattooName = collectionLabel .. " - " .. tattooName
-                            end
-                        end
+                        tattooLabel = t.label 
                         break
                     end
                 end
@@ -266,10 +261,10 @@ local function ShowCurrentTattoos()
             end
         end
         list[#list + 1] = {
-            header = "Tattoo " .. i .. ": " .. tattooName,
+            header = "Tattoo",
             txt = "Zone: " ..
             Config.Labels.Zones[tattooZone] ..
-            ", Value: $" .. tattooValue,
+            ", Value: " .. tattooValue .. ", Collection: " .. tattooLabel, 
             params = {
                 isAction = true,
                 event = function()
@@ -284,7 +279,7 @@ local function ShowCurrentTattoos()
                         params = {
                             isAction = true,
                             event = function()
-                                RemoveTattoo(tattoo.nameHash, tattoo.name)
+                                RemoveTattoo(tattoo.nameHash, tattooLabel)
                                 ShowCurrentTattoos()
                             end,
                         },
@@ -306,7 +301,7 @@ local function ShowCurrentTattoos()
     exports['qb-menu']:openMenu(list)
 end
 
-function OpenCollection(tattoos, zones, collection)
+local function OpenCollection(tattoos, zones, collection)
     local collectionList = {}
     collectionList[#collectionList + 1] = {
         isMenuHeader = true,
@@ -314,10 +309,11 @@ function OpenCollection(tattoos, zones, collection)
         txt = "",
         disabled = true,
     }
+        for key, value in pairs(Config.Labels.Collections) do
+            print(key, value)
+        end
     local zoneLabel = Config.Labels.Zones[zones.zone]
     local collectionLabel = Config.Labels.Collections[string.lower(collection)]
-    print("Zone Label:", zoneLabel)
-    print("Collection Label:", collectionLabel)
 
     collectionList[#collectionList + 1] = {
         isMenuHeader = false,

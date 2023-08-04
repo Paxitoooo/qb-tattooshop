@@ -31,7 +31,7 @@ Config.Labels = {
 		ZONE_HAIR = "Hair",
 	},
 	Collections = {
-		rcore_overlays_freehalloweenpack = "halloween",
+		pixoink_overlays = "Pixoink",
 	},
 }
 

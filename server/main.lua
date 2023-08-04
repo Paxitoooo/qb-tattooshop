@@ -1,5 +1,4 @@
 local QBCore = exports['qb-core']:GetCoreObject()
--- Callbacks
 
 QBCore.Functions.CreateCallback('SmallTattoos:GetPlayerTattoos', function(source, cb)
 	local src = source
@@ -47,7 +46,7 @@ RegisterNetEvent('SmallTattoos:RemoveTattoo', function(tattooList)
 		Player.PlayerData.citizenid
 	})
 end)
--- Exprimental stuff, not sure if this is a good thing?
+
 if Config.Multicharacter then
 	RegisterServerEvent('QBCore:Server:TriggerCallback', function(event, data)
 		local src = source
@@ -66,3 +65,22 @@ if Config.Multicharacter then
 		end
 	end)
 end
+--Debug command for collections
+RegisterCommand("printc", function(source, args, rawCommand)
+    local collections = {}
+    for zoneName, zoneData in pairs(Config.TattooList) do
+        for collectionName, collectionData in pairs(zoneData) do
+            collections[collectionName] = true
+        end
+    end
+
+    print("Collections:")
+    for collectionName, _ in pairs(collections) do
+        print(collectionName)
+    end
+
+    print("Config.Labels.Collections:")
+    for key, value in pairs(Config.Labels.Collections) do
+        print(key, value)
+    end
+end, false)
