@@ -10,6 +10,15 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Samurai",
+                label = "Samurai",
+                hashMale = "samurai_M",
+                hashFemale = "samurai_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
     
         },
     },

@@ -65,6 +65,7 @@ if Config.Multicharacter then
 		end
 	end)
 end
+
 --Debug command for collections
 RegisterCommand("printc", function(source, args, rawCommand)
     local collections = {}

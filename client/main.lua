@@ -261,10 +261,9 @@ local function ShowCurrentTattoos()
             end
         end
         list[#list + 1] = {
-            header = "Tattoo",
+            header = tattooLabel,
             txt = "Zone: " ..
-            Config.Labels.Zones[tattooZone] ..
-            ", Value: " .. tattooValue .. ", Collection: " .. tattooLabel, 
+            Config.Labels.Zones[tattooZone],
             params = {
                 isAction = true,
                 event = function()
@@ -415,9 +414,8 @@ local function OpenCollection(tattoos, zones, collection)
         txt = "",
         disabled = true,
     }
-    -- Loop through the tattoos in the collection
+
     for i, tattoo in ipairs(tattoos) do
-        -- Skip this tattoo if the hash is invalid for the player gender
         local hash = GetEntityModel(PlayerPedId()) == `mp_f_freemode_01` and tattoo.hashFemale or tattoo.hashMale
         if hash == '' then
             goto continue
@@ -438,7 +436,6 @@ local function OpenCollection(tattoos, zones, collection)
             tattooHash = hash
         end
     
-        -- Add menu item
         collectionList[#collectionList + 1] = {
             header = header,
             txt = "Price : $" .. price,
