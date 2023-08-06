@@ -19,16 +19,43 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-    
+            {
+                name = "Dragon Ball",
+                label = "Dragon Ball",
+                hashMale = "dragon_ball_M",
+                hashFemale = "dragon_ball_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "La Casa",
+                label = "La Casa",
+                hashMale = "la_casa_M",
+                hashFemale = "la_casa_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+
         },
     },
     ZONE_LEFT_ARM = {
         pixoink_overlays = {
             {
-                name = "Ghostface",
-                label = "Ghostface",
-                hashMale = "ghostface_M",
-                hashFemale = "ghostface_F",
+                name = "Petals of death",
+                label = "Petals of death",
+                hashMale = "petals_of_death_M",
+                hashFemale = "petals_of_death_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Tall blooms",
+                label = "Tall blooms",
+                hashMale = "tall_blooms_M",
+                hashFemale = "tall_blooms_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1

@@ -202,13 +202,13 @@ local function CloseMenu()
 end
 
 local function isTattooSelectedOrOwned(tattoo)
-    if GetEntityModel(PlayerPedId()) == `mp_m_freemode_01` then -- player is male
+    if GetEntityModel(PlayerPedId()) == `mp_m_freemode_01` then
         if lastSelectedTattoo.hash == tattoo.hashMale then
             return true, "Last selected"
         elseif IsTattooOwned(tattoo.hashMale) then
             return true, "Already owned"
         end
-    elseif GetEntityModel(PlayerPedId()) == `mp_f_freemode_01` then -- player is female
+    elseif GetEntityModel(PlayerPedId()) == `mp_f_freemode_01` then
         if lastSelectedTattoo.hash == tattoo.hashFemale then
             return true, "Last selected"
         elseif IsTattooOwned(tattoo.hashFemale) then
@@ -548,7 +548,7 @@ function TattooMenu()
         params = {
             isAction = true,
             event = function()
-                CloseMenu() -- Closing menu NO SHIT
+                CloseMenu()
             end,
         },
     }
