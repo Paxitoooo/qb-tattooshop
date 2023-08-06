@@ -37,6 +37,51 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Shaggy",
+                label = "Shaggy",
+                hashMale = "shaggy_M",
+                hashFemale = "shaggy_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Daphne",
+                label = "Daphne",
+                hashMale = "daphne_M",
+                hashFemale = "daphne_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Fred",
+                label = "Fred",
+                hashMale = "fred_M",
+                hashFemale = "fred_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Scrappy Doo",
+                label = "Scrappy Doo",
+                hashMale = "scrappy_doo_M",
+                hashFemale = "scrappy_doo_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Scooby Doo",
+                label = "Scooby Doo",
+                hashMale = "scooby_doo_M",
+                hashFemale = "scooby_doo_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
@@ -60,16 +105,25 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "The Witcher",
+                label = "The Witcher",
+                hashMale = "the_witcher_M",
+                hashFemale = "the_witcher_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
     ZONE_RIGHT_ARM = {
         pixoink_overlays = {
             {
-                name = "Jason Half Sleeve",
-                label = "Jason Half Sleeve",
-                hashMale = "jason_sleeve_M",
-                hashFemale = "jason_sleeve_F",
+                name = "",
+                label = "",
+                hashMale = "_M",
+                hashFemale = "_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
@@ -80,10 +134,10 @@ Config.TattooList = {
     ZONE_LEFT_LEG = {
         pixoink_overlays = {
             {
-                name = "Jason Half Sleeve",
-                label = "Jason Half Sleeve",
-                hashMale = "jason_sleeve_M",
-                hashFemale = "jason_sleeve_F",
+                name = "",
+                label = "",
+                hashMale = "_M",
+                hashFemale = "_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
@@ -94,10 +148,10 @@ Config.TattooList = {
     ZONE_RIGHT_LEG = {
         pixoink_overlays = {
             {
-                name = "Jason Half Sleeve",
-                label = "Jason Half Sleeve",
-                hashMale = "jason_sleeve_M",
-                hashFemale = "jason_sleeve_F",
+                name = "",
+                label = "",
+                hashMale = "_M",
+                hashFemale = "_F",
                 zone = "ZONE_RIGHT_LEG",
                 collection = "pixoink_overlays",
                 price = 1
