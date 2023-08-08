@@ -131,6 +131,51 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Angel Heart",
+                label = "Angel Heart",
+                hashMale = "val_angelheart_M",
+                hashFemale = "val_angelheart_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Angel Heart Back",
+                label = "Angel Heart Back",
+                hashMale = "val_angelheart2_M",
+                hashFemale = "val_angelheart2_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Rose Key",
+                label = "Rose Key",
+                hashMale = "val_rose_M",
+                hashFemale = "val_rose_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Amor Angel",
+                label = "Amor Angel",
+                hashMale = "val_amor_M",
+                hashFemale = "val_amor_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Don't Forget To Love",
+                label = "Don't Forget To Love",
+                hashMale = "val_love_M",
+                hashFemale = "val_love_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
@@ -177,6 +222,24 @@ Config.TattooList = {
                 label = "Crown Families",
                 hashMale = "crown_families_M",
                 hashFemale = "crown_families_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "One Life",
+                label = "One Life",
+                hashMale = "val_life_M",
+                hashFemale = "val_life_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "You Have A Pizza",
+                label = "You Have A Pizza",
+                hashMale = "val_pizza2_M",
+                hashFemale = "val_pizza2_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
