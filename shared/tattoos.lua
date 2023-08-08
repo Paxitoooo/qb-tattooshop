@@ -1,4 +1,17 @@
 Config.TattooList = {
+    ZONE_HEAD = {
+        pixoink_overlays = {
+            {
+                name = "",
+                label = "",
+                hashMale = "_M",
+                hashFemale = "_F",
+                zone = "ZONE_HEAD",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+        },
+    },
     ZONE_TORSO = {
         pixoink_overlays = {
             {
@@ -82,6 +95,15 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Grove Street Families",
+                label = "Grove Street Families",
+                hashMale = "grove_street_families_M",
+                hashFemale = "grove_street_families_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
@@ -114,20 +136,73 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-
+            {
+                name = "Rust Character",
+                label = "Rust Character",
+                hashMale = "rust_character_M",
+                hashFemale = "rust_character_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Crown Families",
+                label = "Crown Families",
+                hashMale = "crown_families_M",
+                hashFemale = "crown_families_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
         },
     },
     ZONE_RIGHT_ARM = {
         pixoink_overlays = {
             {
-                name = "",
-                label = "",
-                hashMale = "_M",
-                hashFemale = "_F",
+                name = "Disney Dumbo",
+                label = "Disney Dumbo",
+                hashMale = "disney_dumbo_M",
+                hashFemale = "disney_dumbo_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
-            }
+            },
+            {
+                name = "Disney Skunk Bambi",
+                label = "Disney Skunk Bambi",
+                hashMale = "disney_skunk_bambi_M",
+                hashFemale = "disney_skunk_bambi_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Hallo Kittty",
+                label = "Hallo Kittty",
+                hashMale = "hallo_kittty_M",
+                hashFemale = "hallo_kittty_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "SpongeBob",
+                label = "SpongeBob",
+                hashMale = "spongebob_M",
+                hashFemale = "spongebob_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "The Simpsons",
+                label = "The Simpsons",
+                hashMale = "the_simpsons_M",
+                hashFemale = "the_simpsons_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
