@@ -65,23 +65,3 @@ if Config.Multicharacter then
 		end
 	end)
 end
-
---Debug command for collections
-RegisterCommand("printc", function(source, args, rawCommand)
-    local collections = {}
-    for zoneName, zoneData in pairs(Config.TattooList) do
-        for collectionName, collectionData in pairs(zoneData) do
-            collections[collectionName] = true
-        end
-    end
-
-    print("Collections:")
-    for collectionName, _ in pairs(collections) do
-        print(collectionName)
-    end
-
-    print("Config.Labels.Collections:")
-    for key, value in pairs(Config.Labels.Collections) do
-        print(key, value)
-    end
-end, false)

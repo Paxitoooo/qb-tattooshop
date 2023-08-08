@@ -1,12 +1,3 @@
---[[
-
-    !!!WARNING!!!
-
-    HORRIBLE, STUPID, HACKY AND PREFORMANCE DEGRADING CODE AHEAD
-
-    PROCEED WITH CAUTION
-    
-]]
 
 RequestStreamedTextureDict("CommonMenu")
 
@@ -51,7 +42,6 @@ local continuity = {}
 
 local function HudColourToTable(r,g,b,a) return { r, g, b, a or 255 } end
 
--- Local functions
 local function debugPrint(text)
     if JayMenu.debug then
         Citizen.Trace('[JayMenu] '..tostring(text))
@@ -72,24 +62,6 @@ local function isMenuVisible(id)
         return false
     end
 end
-
---[[local function setMenuVisible(id, visible, holdCurrent)
-    if id and menus[id] then
-        setMenuProperty(id, 'visible', visible)
-
-        if not holdCurrent and menus[id] then
-            setMenuProperty(id, 'currentOption', 1)
-        end
-
-        if visible then
-            if id ~= currentMenu and isMenuVisible(currentMenu) then
-                setMenuVisible(currentMenu, false)
-            end
-
-            currentMenu = id
-        end
-    end
-end]]
 
 local function setMenuVisible(id, visible, holdCurrent)
     if id and menus[id] then
@@ -180,14 +152,12 @@ local function drawTitle()
 		if menus[currentMenu].titleFont == "!sprite!" then
 			local color = menus[currentMenu].titleBackgroundColor
 			local textDict, sprite = table.unpack(menus[currentMenu].titleColor)
-			--print("txd:"..textDict.." spr:"..sprite.." col:"..color.r..","..color.g..","..color.b..","..color.a)
 			RequestStreamedTextureDict(textDict, false)
 			HasStreamedTextureDictLoaded(textDict)
 			DrawSprite(textDict, sprite, x, y, menuWidth, titleHeight, 0, color[1], color[2], color[3], color[4])
 		elseif menus[currentMenu].titleFont == "~sprite~" then
 			local color = menus[currentMenu].titleBackgroundColor
 			local textDict, sprite = table.unpack(menus[currentMenu].titleColor)
-			--print("txd:"..textDict.." spr:"..sprite.." col:"..color.r..","..color.g..","..color.b..","..color.a)
 			RequestStreamedTextureDict(textDict, false)
 			HasStreamedTextureDictLoaded(textDict)
 			DrawSprite(textDict, sprite, x, y, menuWidth, titleHeight, 0, color[1], color[2], color[3], color[4])
@@ -197,7 +167,6 @@ local function drawTitle()
                 SetUiLayer(0)
                 DrawSprite("CommonMenu", "interaction_bgd", x, y, menuWidth, titleHeight, 0.0, 255, 255, 255, 255, 0)
             end
-			--drawRect(x, y, menuWidth, titleHeight, menus[currentMenu].titleBackgroundColor)
 			drawText(menus[currentMenu].title, x, y - titleHeight / 2 + titleYOffset, menus[currentMenu].titleFont, menus[currentMenu].titleColor, titleScale, true)
         end
 
@@ -205,30 +174,11 @@ local function drawTitle()
     end
 end
 
--- local function drawSubTitle()
-    -- if menus[currentMenu] then
-        -- local x = menus[currentMenu].x + (menuWidth / 2)
-        -- local y = menus[currentMenu].y + (titleHeight + buttonHeight / 2)
-
-        -- local subTitleColor = { r = menus[currentMenu].titleBackgroundColor.r, g = menus[currentMenu].titleBackgroundColor.g, b = menus[currentMenu].titleBackgroundColor.b, a = 255 }
-        -- local subTitleColor = {255, 255, 255, 255}
-
-        -- drawRect(x, y, menuWidth, buttonHeight, menus[currentMenu].subTitleBackgroundColor)
-        -- drawText(menus[currentMenu].subTitle, menus[currentMenu].x + buttonTextXOffset, y - buttonHeight / 2 + buttonTextYOffset, buttonFont, false, buttonScale, false)
-        -- drawText(tostring(menus[currentMenu].currentOption)..' / '..tostring(optionCount), menus[currentMenu].x + menuWidth, y - buttonHeight / 2 + buttonTextYOffset, buttonFont, false, buttonScale, false, false, true)
-
-        -- local x,y,subTitleColor = nil
-    -- end
--- end
-
 local function drawSubTitle()
     if menus[currentMenu] then
         local x = menus[currentMenu].x + (menuWidth / 2)
         local y = menus[currentMenu].y + (titleHeight + buttonHeight / 2)
         local subtitle = menus[currentMenu].subTitle
-
-        --local subTitleColor = { r = menus[currentMenu].titleBackgroundColor.r, g = menus[currentMenu].titleBackgroundColor.g, b = menus[currentMenu].titleBackgroundColor.b, a = 255 }
-        --local subTitleColor = {255, 255, 255, 255}    
 
         drawRect(x, y, menuWidth, buttonHeight, menus[currentMenu].subTitleBackgroundColor)
         if subtitle:find("|") then
@@ -533,21 +483,15 @@ function JayMenu.OpenMenu(id)
     if id and menus[id] then
         PlaySoundFrontend(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true)
         setMenuVisible(id, true)
-
-        -- continuity.lastPedWeapon = GetCurrentPedWeapon(PlayerPedId())
-        -- SetPedCurrentWeaponVisible(PlayerPedId(), false, true)
-
         debugPrint(tostring(id)..' menu opened')
     else
         debugPrint('Failed to open '..tostring(id)..' menu: it doesn\'t exist')
     end
 end
 
-
 function JayMenu.IsMenuOpened(id)
     return isMenuVisible(id)
 end
-
 
 function JayMenu.IsAnyMenuOpened()
     for id, _ in pairs(menus) do
@@ -585,7 +529,6 @@ function JayMenu.IsThisMenuAboutToBeClosed(id)
     end
 end
 
-
 function JayMenu.CloseMenu()
     if menus[currentMenu] then
         if menus[currentMenu].aboutToBeClosed then
@@ -598,7 +541,6 @@ function JayMenu.CloseMenu()
 			currentKey = nil
 			currentDesc = nil
 
-            -- keep continuity
             if continuity.lastPedWeapon then
                 SetCurrentPedWeapon(PlayerPedId(), continuity.lastPedWeapon, true)
             end
@@ -760,7 +702,6 @@ function JayMenu.ComboBox(text, items, currentIndex, selectedIndex, callback, di
     end
 
     callback(currentIndex, selectedIndex)
-    -- local itemsCount,isCurrent,getDisplayText,selectedItem = nil
     return false, isCurrent
 end
 
@@ -792,11 +733,6 @@ function JayMenu.SetDescription(text)
 end
 
 function JayMenu.CheckBox(text, bool, callback)
-    --[[local checked = '~r~Off'
-    if bool then
-        checked = '~g~On'
-    end]]
-
     local sprite = bool and "shop_box_tick" or "shop_box_blank"
     local focusSprite = bool and "shop_box_tickb" or "shop_box_blankb"
 
