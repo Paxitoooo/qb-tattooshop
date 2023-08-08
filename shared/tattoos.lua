@@ -104,6 +104,33 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Vagos Mother of God",
+                label = "Vagos Mother of God",
+                hashMale = "vagos_mother_of_god_M",
+                hashFemale = "vagos_mother_of_god_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Vagos Eagle",
+                label = "Vagos Eagle",
+                hashMale = "vagos_eagle_M",
+                hashFemale = "vagos_eagle_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Vagos Facemask",
+                label = "Vagos Facemask",
+                hashMale = "vagos_facemask_M",
+                hashFemale = "vagos_facemask_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
