@@ -287,7 +287,6 @@ local function drawButton(text, subText)
                 SetUiLayer(1)
                 DrawSprite("CommonMenu", "Gradient_Nav", x, y, menuWidth, buttonHeight, 0.0, 255, 255, 255, 255, 0)
             end
-            --drawRect(x, y, menuWidth, buttonHeight, backgroundColor)
             drawText(text, menus[currentMenu].x + buttonTextXOffset, y - (buttonHeight / 2) + buttonTextYOffset, buttonFont, textColor, buttonScale, false, shadow)
 
             if subText then
@@ -316,11 +315,6 @@ local function drawDisabledButton(text, subText)
         local subTextColor = HudColourToTable(GetHudColour(5))
         local shadow = false
 
-        --[[if menus[currentMenu].currentOption == optionCount and HasStreamedTextureDictLoaded("CommonMenu") then
-            SetUiLayer(1)
-            DrawSprite("CommonMenu", "Gradient_Nav", x, y, menuWidth, buttonHeight, 0.0, 255, 255, 255, 255, 0)
-        end]]
-        --drawRect(x, y, menuWidth, buttonHeight, backgroundColor)
         drawText(text, menus[currentMenu].x + buttonTextXOffset, y - (buttonHeight / 2) + buttonTextYOffset, buttonFont, textColor, buttonScale, false, shadow)
 
         if subText then
@@ -386,7 +380,6 @@ local function drawSpriteButton(text, textDict, sprite, focusSprite)
 end
 
 local function stopConflictingInputs()
-    -- isolates menu navigation buttons and stops jumping, weapon selection and opening of the pause menu
 
     for _,key in pairs(keys) do
         SetInputExclusive(0, key)
@@ -397,9 +390,8 @@ local function stopConflictingInputs()
     DisableControlAction(0, 200, true)
 end
 
--- API
 function JayMenu.CreateMenu(id, title, closeCallback)
-    -- Default settings
+
     menus[id] = { }
     menus[id].title = title
     menus[id].subTitle = 'INTERACTION MENU'
@@ -410,7 +402,6 @@ function JayMenu.CreateMenu(id, title, closeCallback)
 
     menus[id].aboutToBeClosed = false
 
-    -- Top left corner
     menus[id].x = 0.0145
     menus[id].y = 0.075
 
@@ -429,7 +420,7 @@ function JayMenu.CreateMenu(id, title, closeCallback)
 
     menus[id].subTitleBackgroundColor = {menus[id].menuBackgroundColor[1], menus[id].menuBackgroundColor[2], menus[id].menuBackgroundColor[3], 255 }
 
-    menus[id].buttonPressedSound = { name = "SELECT", set = "HUD_FRONTEND_DEFAULT_SOUNDSET" } --https://pastebin.com/0neZdsZ5
+    menus[id].buttonPressedSound = { name = "SELECT", set = "HUD_FRONTEND_DEFAULT_SOUNDSET" }
 
     menus[id].closeCallback = closeCallback or function() return true end
 
@@ -441,7 +432,6 @@ function JayMenu.CreateSubMenu(id, parent, subTitle, closeCallback)
     if menus[parent] then
         JayMenu.CreateMenu(id, menus[parent].title)
 
-        -- Well it's copy constructor like :)
         if subTitle then
             setMenuProperty(id, 'subTitle', string.upper(subTitle))
         else
