@@ -176,6 +176,24 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Doggy Police Male",
+                label = "Doggy Police Male",
+                hashMale = "dog_police_male_M",
+                hashFemale = "dog_police_male_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Doggy Police Girl",
+                label = "Doggy Police Girl",
+                hashMale = "dog_police_girl_M",
+                hashFemale = "dog_police_girl_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
@@ -308,14 +326,41 @@ Config.TattooList = {
     ZONE_LEFT_LEG = {
         pixoink_overlays = {
             {
-                name = "",
-                label = "",
-                hashMale = "_M",
-                hashFemale = "_F",
+                name = "Noir Elegance In Red",
+                label = "Noir Elegance In Red",
+                hashMale = "noir_elegance_in_red_M",
+                hashFemale = "noir_elegance_in_red_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
-            }
+            },
+            {
+                name = "Ancient Lupine Mark",
+                label = "Ancient Lupine Mark",
+                hashMale = "ancient_lupine_mark_M",
+                hashFemale = "ancient_lupine_mark_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Rebirth in Petals",
+                label = "Rebirth in Petals",
+                hashMale = "rebirth_in_petals_M",
+                hashFemale = "rebirth_in_petals_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Taz",
+                label = "Noir Elegance In Red",
+                hashMale = "taz_M",
+                hashFemale = "taz_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
