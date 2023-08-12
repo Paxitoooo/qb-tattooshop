@@ -204,7 +204,7 @@ Config.TattooList = {
                 label = "Petals of death",
                 hashMale = "petals_of_death_M",
                 hashFemale = "petals_of_death_F",
-                zone = "ZONE_RIGHT_ARM",
+                zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
             },
@@ -213,7 +213,7 @@ Config.TattooList = {
                 label = "Tall blooms",
                 hashMale = "tall_blooms_M",
                 hashFemale = "tall_blooms_F",
-                zone = "ZONE_RIGHT_ARM",
+                zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
             },
@@ -222,7 +222,7 @@ Config.TattooList = {
                 label = "The Witcher",
                 hashMale = "the_witcher_M",
                 hashFemale = "the_witcher_F",
-                zone = "ZONE_RIGHT_ARM",
+                zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
             },
@@ -231,7 +231,7 @@ Config.TattooList = {
                 label = "Rust Character",
                 hashMale = "rust_character_M",
                 hashFemale = "rust_character_F",
-                zone = "ZONE_RIGHT_ARM",
+                zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
             },
@@ -240,7 +240,7 @@ Config.TattooList = {
                 label = "Crown Families",
                 hashMale = "crown_families_M",
                 hashFemale = "crown_families_F",
-                zone = "ZONE_RIGHT_ARM",
+                zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
             },
@@ -249,7 +249,7 @@ Config.TattooList = {
                 label = "One Life",
                 hashMale = "val_life_M",
                 hashFemale = "val_life_F",
-                zone = "ZONE_RIGHT_ARM",
+                zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
             },
@@ -258,7 +258,7 @@ Config.TattooList = {
                 label = "You Have A Pizza",
                 hashMale = "val_pizza2_M",
                 hashFemale = "val_pizza2_F",
-                zone = "ZONE_RIGHT_ARM",
+                zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
             },
@@ -267,7 +267,16 @@ Config.TattooList = {
                 label = "Floral Orbit",
                 hashMale = "floral_orbit_M",
                 hashFemale = "floral_orbit_F",
-                zone = "ZONE_RIGHT_ARM",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Prisma's",
+                label = "Prisma's",
+                hashMale = "prismas_M",
+                hashFemale = "prismas_F",
+                zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
             },
@@ -354,7 +363,7 @@ Config.TattooList = {
             },
             {
                 name = "Taz",
-                label = "Noir Elegance In Red",
+                label = "Taz",
                 hashMale = "taz_M",
                 hashFemale = "taz_F",
                 zone = "ZONE_RIGHT_ARM",
