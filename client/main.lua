@@ -308,9 +308,7 @@ local function OpenCollection(tattoos, zones, collection)
         txt = "",
         disabled = true,
     }
-        for key, value in pairs(Config.Labels.Collections) do
-            print(key, value)
-        end
+
     local zoneLabel = Config.Labels.Zones[zones.zone]
     local collectionLabel = Config.Labels.Collections[string.lower(collection)]
 

@@ -186,10 +186,37 @@ Config.TattooList = {
                 price = 1
             },
             {
-                name = "Doggy Police Girl",
-                label = "Doggy Police Girl",
-                hashMale = "dog_police_girl_M",
-                hashFemale = "dog_police_girl_F",
+                name = "Drakonos",
+                label = "Drakonos",
+                hashMale = "drakonos_M",
+                hashFemale = "drakonos_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Pyroclaw",
+                label = "Pyroclaw",
+                hashMale = "pyroclaw_M",
+                hashFemale = "pyroclaw_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Seraphina",
+                label = "Seraphina",
+                hashMale = "seraphina_M",
+                hashFemale = "seraphina_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Zephyrion",
+                label = "Zephyrion",
+                hashMale = "zephyrion_M",
+                hashFemale = "zephyrion_F",
                 zone = "ZONE_TORSO",
                 collection = "pixoink_overlays",
                 price = 1
