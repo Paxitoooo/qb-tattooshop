@@ -18,7 +18,6 @@ Config.Zones = {
 	[4] = { zone = "ZONE_RIGHT_ARM", 	camPos = { vec(0.4, 1.0, 0.2) }, 		lookAt = vec(0.2, 0.0, 0.2), },
 	[5] = { zone = "ZONE_LEFT_LEG", 	camPos = { vec( -0.2, 1.0, -0.7) }, 	lookAt = vec( -0.2, 0.0, -0.6), },
 	[6] = { zone = "ZONE_RIGHT_LEG", 	camPos = { vec(0.2, 1.0, -0.7) }, 		lookAt = vec(0.2, 0.0, -0.6), },
-	[7] = { zone = "ZONE_HAIR", 		camPos = { vec(0.0, 1.0, 0.7) }, 		lookAt = vec(0.0, 0.0, 0.5), },
 }
 Config.Labels = {
 	Zones = {
@@ -28,7 +27,6 @@ Config.Labels = {
 		ZONE_RIGHT_ARM = "Right arm",
 		ZONE_LEFT_LEG = "Left leg",
 		ZONE_RIGHT_LEG = "Right leg",
-		ZONE_HAIR = "Hair",
 	},
 	Collections = {
 		pixoink_overlays = "Pixoink",
