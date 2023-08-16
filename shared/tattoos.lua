@@ -192,6 +192,24 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Moonlit Owl Majesty",
+                label = "Moonlit Owl Majesty Soul",
+                hashMale = "moonlit_owl_majesty_M",
+                hashFemale = "moonlit_owl_majesty_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Melodic Nestling",
+                label = "Melodic Nestling",
+                hashMale = "melodic_nestling_M",
+                hashFemale = "melodic_nestling_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
@@ -278,6 +296,14 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Owl Guiding Arcana",
+                label = "Owl Guiding Arcana",
+                hashFemale = "owl_guiding_arcana_F",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
         },
     },
     ZONE_RIGHT_ARM = {
@@ -332,6 +358,14 @@ Config.TattooList = {
                 label = "Drakonos",
                 hashMale = "drakonos_M",
                 hashFemale = "drakonos_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Prismatic Owl Perch",
+                label = "Prismatic Owl Perch",
+                hashFemale = "prismatic_owl_perch_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
