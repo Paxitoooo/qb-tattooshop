@@ -33,15 +33,6 @@ Config.TattooList = {
                 price = 1
             },
             {
-                name = "La Casa",
-                label = "La Casa",
-                hashMale = "la_casa_M",
-                hashFemale = "la_casa_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
                 name = "Shaggy",
                 label = "Shaggy",
                 hashMale = "shaggy_M",
@@ -206,6 +197,42 @@ Config.TattooList = {
                 label = "Melodic Nestling",
                 hashMale = "melodic_nestling_M",
                 hashFemale = "melodic_nestling_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Blossoms and Blades",
+                label = "Blossoms and Blades",
+                hashMale = "blossoms_and_blades_M",
+                hashFemale = "blossoms_and_blades_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Boundless Valor",
+                label = "Boundless Valor",
+                hashMale = "boundless_valor_M",
+                hashFemale = "boundless_valor_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Draconic Sentinel",
+                label = "Draconic Sentinel",
+                hashMale = "draconic_sentinel_M",
+                hashFemale = "draconic_sentinel_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Echoes of Honor",
+                label = "Echoes of Honor",
+                hashMale = "echoes_of_honor_M",
+                hashFemale = "echoes_of_honor_F",
                 zone = "ZONE_TORSO",
                 collection = "pixoink_overlays",
                 price = 1
