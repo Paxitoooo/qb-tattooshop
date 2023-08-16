@@ -331,6 +331,61 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Artistic Brawn",
+                label = "Artistic Brawn",
+                hashMale = "artistic_brawn_M",
+                hashFemale = "artistic_brawn_F",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Artistry on Skin",
+                label = "Artistry on Skin",
+                hashMale = "artistry_on_skin_M",
+                hashFemale = "artistry_on_skin_F",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Markings of Strength",
+                label = "Markings of Strength",
+                hashMale = "markings_of_strength_M",
+                hashFemale = "markings_of_strength_F",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Ritualistic Embrace",
+                label = "Ritualistic Embrace",
+                hashMale = "ritualistic_embrace_M",
+                hashFemale = "ritualistic_embrace_F",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Strength in Symbols",
+                label = "Strength in Symbols",
+                hashMale = "strength_in_symbols_M",
+                hashFemale = "strength_in_symbols_F",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Warriors Glyphs",
+                label = "Warriors Glyphs",
+                hashMale = "warriors_glyphs_M",
+                hashFemale = "warriors_glyphs_F",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+
         },
     },
     ZONE_RIGHT_ARM = {
