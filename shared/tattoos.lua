@@ -176,6 +176,22 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Butterflies",
+                label = "Butterflies",
+                hashFemale = "butterflies_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Ascending Soul",
+                label = "Ascending Soul",
+                hashFemale = "ascending_soul_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
