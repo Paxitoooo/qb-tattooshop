@@ -15,15 +15,6 @@ Config.TattooList = {
     ZONE_TORSO = {
         pixoink_overlays = {
             {
-                name = "Freddy Kreuger",
-                label = "Freddy Kreuger",
-                hashMale = "freddy_M",
-                hashFemale = "freddy_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
                 name = "Samurai",
                 label = "Samurai",
                 hashMale = "samurai_M",
@@ -185,42 +176,6 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-            {
-                name = "Drakonos",
-                label = "Drakonos",
-                hashMale = "drakonos_M",
-                hashFemale = "drakonos_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Pyroclaw",
-                label = "Pyroclaw",
-                hashMale = "pyroclaw_M",
-                hashFemale = "pyroclaw_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Seraphina",
-                label = "Seraphina",
-                hashMale = "seraphina_M",
-                hashFemale = "seraphina_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Zephyrion",
-                label = "Zephyrion",
-                hashMale = "zephyrion_M",
-                hashFemale = "zephyrion_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
 
         },
     },
@@ -352,6 +307,15 @@ Config.TattooList = {
                 label = "The Simpsons",
                 hashMale = "the_simpsons_M",
                 hashFemale = "the_simpsons_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Drakonos",
+                label = "Drakonos",
+                hashMale = "drakonos_M",
+                hashFemale = "drakonos_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
