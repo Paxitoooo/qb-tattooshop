@@ -229,10 +229,91 @@ Config.TattooList = {
                 price = 1
             },
             {
-                name = "Echoes of Honor",
-                label = "Echoes of Honor",
-                hashMale = "echoes_of_honor_M",
-                hashFemale = "echoes_of_honor_F",
+                name = "Fam 4 Life	",
+                label = "Fam 4 Life	",
+                hashMale = "fam_for_life_M",
+                hashFemale = "fam_for_life_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Fam West Side",
+                label = "Fam West Side",
+                hashMale = "fam_west_side_M",
+                hashFemale = "fam_west_side_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Family Comes First",
+                label = "Family Comes First",
+                hashMale = "family_comes_first_M",
+                hashFemale = "family_comes_first_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Fam Blood Money",
+                label = "Fam Blood Money",
+                hashMale = "fam_blood_money_M",
+                hashFemale = "fam_blood_money_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Fam Devil",
+                label = "Fam Devil",
+                hashMale = "fam_devil_M",
+                hashFemale = "fam_devil_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "CGF LS AK",
+                label = "CGF LS AK",
+                hashMale = "cgf_ls_ak_M",
+                hashFemale = "cgf_ls_ak_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Chamberlain",
+                label = "Chamberlain",
+                hashMale = "chamberlain_M",
+                hashFemale = "chamberlain_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Fam Los Santos",
+                label = "Fam Los Santos",
+                hashMale = "fam_los_santos_M",
+                hashFemale = "fam_los_santos_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Family Gangbang",
+                label = "Family Gangbang",
+                hashMale = "family_gangbang_M",
+                hashFemale = "family_gangbang_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            {
+                name = "Los Santos CGF",
+                label = "Los Santos CGF",
+                hashMale = "los_santos_cgf_M",
+                hashFemale = "los_santos_cgf_F",
                 zone = "ZONE_TORSO",
                 collection = "pixoink_overlays",
                 price = 1
