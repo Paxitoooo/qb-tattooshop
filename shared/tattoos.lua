@@ -577,16 +577,7 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-            {
-                name = "Inada",
-                label = "Inada",
-                hashMale = "inada_M",
-                hashFemale = "inada_F",
-                zone = "ZONE_RIGHT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-
+            
         },
     },
     ZONE_LEFT_LEG = {
