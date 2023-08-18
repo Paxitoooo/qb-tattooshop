@@ -12,8 +12,8 @@ Config.TattooObjects = {
 }
 
 Config.Zones = {
-	[1] = { zone = "ZONE_TORSO", 		camPos = { vec(0.0, 1.0, 0.2) }, 		lookAt = vec(0.0, 0.0, 0.2), },
 	[2] = { zone = "ZONE_HEAD", 		camPos = { vec(0.0, 1.0, 0.7) }, 		lookAt = vec(0.0, 0.0, 0.5), },
+	[1] = { zone = "ZONE_TORSO", 		camPos = { vec(0.0, 1.0, 0.2) }, 		lookAt = vec(0.0, 0.0, 0.2), },
 	[3] = { zone = "ZONE_LEFT_ARM", 	camPos = { vec( -0.4, 1.0, 0.2) }, 		lookAt = vec( -0.2, 0.0, 0.2), },
 	[4] = { zone = "ZONE_RIGHT_ARM", 	camPos = { vec(0.4, 1.0, 0.2) }, 		lookAt = vec(0.2, 0.0, 0.2), },
 	[5] = { zone = "ZONE_LEFT_LEG", 	camPos = { vec( -0.2, 1.0, -0.7) }, 	lookAt = vec( -0.2, 0.0, -0.6), },
@@ -21,8 +21,8 @@ Config.Zones = {
 }
 Config.Labels = {
 	Zones = {
-		ZONE_TORSO = "Torso",
 		ZONE_HEAD = "Head",
+		ZONE_TORSO = "Torso",
 		ZONE_LEFT_ARM = "Left arm",
 		ZONE_RIGHT_ARM = "Right arm",
 		ZONE_LEFT_LEG = "Left leg",

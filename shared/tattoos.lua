@@ -466,7 +466,15 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-
+            {
+                name = "Full Sleeve",
+                label = "Full Sleeve",
+                hashMale = "full_sleeve_M",
+                hashFemale = "full_sleeve_F",
+                zone = "ZONE_LEFT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
         },
     },
     ZONE_RIGHT_ARM = {
@@ -533,11 +541,6 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-
-        },
-    },
-    ZONE_LEFT_LEG = {
-        pixoink_overlays = {
             {
                 name = "Noir Elegance In Red",
                 label = "Noir Elegance In Red",
@@ -574,6 +577,29 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Inada",
+                label = "Inada",
+                hashMale = "inada_M",
+                hashFemale = "inada_F",
+                zone = "ZONE_RIGHT_ARM",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+
+        },
+    },
+    ZONE_LEFT_LEG = {
+        pixoink_overlays = {
+            {
+                name = "",
+                label = "",
+                hashMale = "_M",
+                hashFemale = "_F",
+                zone = "ZONE_LEFT_LEG",
+                collection = "pixoink_overlays",
+                price = 1
+            }
 
         },
     },
