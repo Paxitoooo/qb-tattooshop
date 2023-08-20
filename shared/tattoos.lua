@@ -24,42 +24,6 @@ Config.TattooList = {
                 price = 1
             },
             {
-                name = "Dragon Ball",
-                label = "Dragon Ball",
-                hashMale = "dragon_ball_M",
-                hashFemale = "dragon_ball_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Shaggy",
-                label = "Shaggy",
-                hashMale = "shaggy_M",
-                hashFemale = "shaggy_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Daphne",
-                label = "Daphne",
-                hashMale = "daphne_M",
-                hashFemale = "daphne_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Fred",
-                label = "Fred",
-                hashMale = "fred_M",
-                hashFemale = "fred_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
                 name = "Scrappy Doo",
                 label = "Scrappy Doo",
                 hashMale = "scrappy_doo_M",
@@ -154,15 +118,6 @@ Config.TattooList = {
                 label = "Don't Forget To Love",
                 hashMale = "val_love_M",
                 hashFemale = "val_love_F",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Doggy Police Male",
-                label = "Doggy Police Male",
-                hashMale = "dog_police_male_M",
-                hashFemale = "dog_police_male_F",
                 zone = "ZONE_TORSO",
                 collection = "pixoink_overlays",
                 price = 1
@@ -342,24 +297,6 @@ Config.TattooList = {
                 price = 1
             },
             {
-                name = "The Witcher",
-                label = "The Witcher",
-                hashMale = "the_witcher_M",
-                hashFemale = "the_witcher_F",
-                zone = "ZONE_LEFT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Rust Character",
-                label = "Rust Character",
-                hashMale = "rust_character_M",
-                hashFemale = "rust_character_F",
-                zone = "ZONE_LEFT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
                 name = "Crown Families",
                 label = "Crown Families",
                 hashMale = "crown_families_M",
@@ -489,37 +426,10 @@ Config.TattooList = {
                 price = 1
             },
             {
-                name = "Disney Skunk Bambi",
-                label = "Disney Skunk Bambi",
-                hashMale = "disney_skunk_bambi_M",
-                hashFemale = "disney_skunk_bambi_F",
-                zone = "ZONE_RIGHT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Hallo Kittty",
-                label = "Hallo Kittty",
-                hashMale = "hallo_kittty_M",
-                hashFemale = "hallo_kittty_F",
-                zone = "ZONE_RIGHT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "SpongeBob",
-                label = "SpongeBob",
-                hashMale = "spongebob_M",
-                hashFemale = "spongebob_F",
-                zone = "ZONE_RIGHT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "The Simpsons",
-                label = "The Simpsons",
-                hashMale = "the_simpsons_M",
-                hashFemale = "the_simpsons_F",
+                name = "Lisa Simpson",
+                label = "Lisa Simpson",
+                hashMale = "lisa_simpson_M",
+                hashFemale = "lisa_simpson_F",
                 zone = "ZONE_RIGHT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
