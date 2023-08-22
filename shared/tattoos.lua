@@ -273,6 +273,14 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Sparkling Rosy Heart",
+                label = "Sparkling Rosy Heart",
+                hashFemale = "sparkling_rosy_heart_F",
+                zone = "ZONE_TORSO",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
@@ -507,14 +515,23 @@ Config.TattooList = {
     ZONE_RIGHT_LEG = {
         pixoink_overlays = {
             {
-                name = "",
-                label = "",
-                hashMale = "_M",
-                hashFemale = "_F",
+                name = "Val Blue",
+                label = "Val Blue",
+                hashMale = "val_blue_M",
+                hashFemale = "val_blue_F",
                 zone = "ZONE_RIGHT_LEG",
                 collection = "pixoink_overlays",
                 price = 1
-            }
+            },
+            {
+                name = "Broken Wings",
+                label = "Broken Wings",
+                hashMale = "broken_wings_M",
+                hashFemale = "broken_wings_F",
+                zone = "ZONE_RIGHT_LEG",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
