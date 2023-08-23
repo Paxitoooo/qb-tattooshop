@@ -272,19 +272,9 @@ Config.TattooList = {
                 price = 1
             },
             {
-                name = "Tall blooms",
-                label = "Tall blooms",
-                hashMale = "tall_blooms_M",
-                hashFemale = "tall_blooms_F",
-                zone = "ZONE_LEFT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
                 name = "Crown Families",
                 label = "Crown Families",
                 hashMale = "crown_families_M",
-                hashFemale = "crown_families_F",
                 zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
@@ -434,42 +424,6 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-            {
-                name = "Noir Elegance In Red",
-                label = "Noir Elegance In Red",
-                hashMale = "noir_elegance_in_red_M",
-                hashFemale = "noir_elegance_in_red_F",
-                zone = "ZONE_RIGHT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Ancient Lupine Mark",
-                label = "Ancient Lupine Mark",
-                hashMale = "ancient_lupine_mark_M",
-                hashFemale = "ancient_lupine_mark_F",
-                zone = "ZONE_RIGHT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Rebirth in Petals",
-                label = "Rebirth in Petals",
-                hashMale = "rebirth_in_petals_M",
-                hashFemale = "rebirth_in_petals_F",
-                zone = "ZONE_RIGHT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Taz",
-                label = "Taz",
-                hashMale = "taz_M",
-                hashFemale = "taz_F",
-                zone = "ZONE_RIGHT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
             
         },
     },
@@ -482,7 +436,34 @@ Config.TattooList = {
                 zone = "ZONE_LEFT_LEG",
                 collection = "pixoink_overlays",
                 price = 1
-            }
+            },
+                        {
+                name = "Noir Elegance In Red",
+                label = "Noir Elegance In Red",
+                hashMale = "noir_elegance_in_red_M",
+                hashFemale = "noir_elegance_in_red_F",
+                zone = "ZONE_LEFT_LEG",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+                        {
+                name = "Ancient Lupine Mark",
+                label = "Ancient Lupine Mark",
+                hashMale = "ancient_lupine_mark_M",
+                hashFemale = "ancient_lupine_mark_F",
+                zone = "ZONE_LEFT_LEG",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+                        {
+                name = "Rebirth in Petals",
+                label = "Rebirth in Petals",
+                hashMale = "rebirth_in_petals_M",
+                hashFemale = "rebirth_in_petals_F",
+                zone = "ZONE_LEFT_LEG",
+                collection = "pixoink_overlays",
+                price = 1
+            },
 
         },
     },
