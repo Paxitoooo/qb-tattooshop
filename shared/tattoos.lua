@@ -2,14 +2,24 @@ Config.TattooList = {
     ZONE_HEAD = {
         pixoink_overlays = {
             {
-                name = "",
-                label = "",
-                hashMale = "_M",
-                hashFemale = "_F",
+                name = "Val Heart",
+                label = "Val Heart",
+                hashMale = "val_heart_M",
+                hashFemale = "val_heart_F",
                 zone = "ZONE_HEAD",
                 collection = "pixoink_overlays",
                 price = 1
             },
+            {
+                name = "Val Heart",
+                label = "Val Heart",
+                hashMale = "val_heart2_M",
+                hashFemale = "val_heart2_F",
+                zone = "ZONE_HEAD",
+                collection = "pixoink_overlays",
+                price = 1
+            },
+            
         },
     },
     ZONE_TORSO = {
@@ -18,6 +28,7 @@ Config.TattooList = {
                 name = "Samurai",
                 label = "Samurai",
                 hashMale = "samurai_M",
+                hashMale = "samurai_F",
                 zone = "ZONE_TORSO",
                 collection = "pixoink_overlays",
                 price = 1
@@ -52,22 +63,6 @@ Config.TattooList = {
                 name = "Vagos Mother of God",
                 label = "Vagos Mother of God",
                 hashMale = "vagos_mother_of_god_M",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Vagos Eagle",
-                label = "Vagos Eagle",
-                hashMale = "vagos_eagle_M",
-                zone = "ZONE_TORSO",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Vagos Facemask",
-                label = "Vagos Facemask",
-                hashMale = "vagos_facemask_M",
                 zone = "ZONE_TORSO",
                 collection = "pixoink_overlays",
                 price = 1
@@ -275,6 +270,7 @@ Config.TattooList = {
                 name = "Crown Families",
                 label = "Crown Families",
                 hashMale = "crown_families_M",
+                hashMale = "crown_families_F",
                 zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
@@ -310,14 +306,7 @@ Config.TattooList = {
                 name = "Prisma's",
                 label = "Prisma's",
                 hashMale = "prismas_M",
-                zone = "ZONE_LEFT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Owl Guiding Arcana",
-                label = "Owl Guiding Arcana",
-                hashFemale = "owl_guiding_arcana_F",
+                hashFemale = "prismas_F",
                 zone = "ZONE_LEFT_ARM",
                 collection = "pixoink_overlays",
                 price = 1
@@ -376,15 +365,7 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-            {
-                name = "Full Sleeve",
-                label = "Full Sleeve",
-                hashMale = "full_sleeve_M",
-                hashFemale = "full_sleeve_F",
-                zone = "ZONE_LEFT_ARM",
-                collection = "pixoink_overlays",
-                price = 1
-            },
+
         },
     },
     ZONE_RIGHT_ARM = {
@@ -424,7 +405,6 @@ Config.TattooList = {
                 collection = "pixoink_overlays",
                 price = 1
             },
-            
         },
     },
     ZONE_LEFT_LEG = {
@@ -474,15 +454,6 @@ Config.TattooList = {
                 label = "Val Blue",
                 hashMale = "val_blue_M",
                 hashFemale = "val_blue_F",
-                zone = "ZONE_RIGHT_LEG",
-                collection = "pixoink_overlays",
-                price = 1
-            },
-            {
-                name = "Broken Wings",
-                label = "Broken Wings",
-                hashMale = "broken_wings_M",
-                hashFemale = "broken_wings_F",
                 zone = "ZONE_RIGHT_LEG",
                 collection = "pixoink_overlays",
                 price = 1
